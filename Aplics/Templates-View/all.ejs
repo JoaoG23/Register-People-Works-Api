@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="./icons/icons8-form-64.png" type="image/x-icon">
+    <title>All Registers</title>
+</head>
+
+<body>
+
+    <div class="bg-info text-light">
+
+        <%- include('./partials/navbar.ejs' ,{title: "List all" });%>
+            <main class="container">
+                <section class="row">
+                    <h1 class="col">All Registers</h1>
+                    <button class=" my-2 btn btn-light col-3" onclick="window.print()">&#9703; Export PDF</button>
+                    
+                </section>
+
+
+                <%for(let i=0; i < docs.length; i++){%>
+
+                    <section class="card p-3 mb-2" id="<%=docs[i]._id%>">
+                        <article class="d-flex align-items-center justify-content-between text-dark">
+                            <div class="d-flex flex-column">
+
+                                <h2>
+                                    <%=docs[i].yourName%>
+                                </h2>
+                                <h3>Age: <%=docs[i].age%>
+                                </h3>
+                                <h4>Indentify : <%=docs[i].identity%>
+                                </h4>
+                                <ul>
+                                    <li>Weight: <%=docs[i].weight%>
+                                    </li>
+                                    <li>Size: <%=docs[i].size%>
+                                    </li>
+                                    <li>Profession: <%=docs[i].profession%>
+                                    </li>
+                                    <li>Nationality: <%=docs[i].nationality%>
+                                    </li>
+                                    <li>Street: <%=docs[i].street%>
+                                    </li>
+                                    <li>City:<%=docs[i].city%>
+                                    </li>
+                                    <li>Country:<%=docs[i].country%>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="d-flex flex-column">
+                                <a class="btn btn-info mb-1" href="./edit/<%=docs[i]._id%>%>">Editar &#9998;</a>
+                                <button class="btn btn-danger mb-1" onclick="deleteRegister('<%=docs[i]._id%>')">Delete
+                                    &#10008; </button>
+                            </div>
+                        </article>
+                    </section>
+
+                    <%}%>
+            </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script>
+
+        function deleteRegister(id) {
+
+            fetch('/' + id, { method: 'DELETE' }).then(resp => {
+
+                if (resp.status == 200) {
+
+                    resp.text().then(idDocument => {
+                        console.log(idDocument);
+                        document.getElementById(idDocument).remove();
+                    })
+                } else {
+                    resp.json().then(erro => {
+                        console.log(erro.message);
+                        alert(erro.message);
+                    })
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
