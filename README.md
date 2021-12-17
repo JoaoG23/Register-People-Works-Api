@@ -10,7 +10,7 @@
 Alterações   | Data
 :---------: | :------:
 Emissão Inicial | 11/12/2021
-Vazio | Vazio
+Consertando bugs edit | 17/12/2021
 
 ### Tecnologias Usados
 #### 🧑‍💻 No front-end
@@ -31,6 +31,10 @@ Vazio | Vazio
 
 ![Alt ou título da imagem](./Assets/icons8-bootstrap.svg)
 
+**_e Ejs_**
+
+![Alt ou título da imagem](./Assets/ejs.svg)
+
 #### 👥 No Back-end
 **_NODE js_**
 
@@ -40,14 +44,7 @@ Vazio | Vazio
 
 ![Alt ou título da imagem](./Assets/icons8-mongodb.svg)
 
-
-
-**_e Ejs_**
-
-![Alt ou título da imagem](./Assets/ejs.svg)
-
-
-
+**_ExpressJs_**
 
 
 
