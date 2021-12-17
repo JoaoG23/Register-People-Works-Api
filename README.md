@@ -3,7 +3,7 @@
 1. **Introdução**
 1. **Desenvolvimento**
 1. **Como Usar**
-1. **Outras Coisa Não Tão relavantes**
+1. **Outras Coisas Não Tão relavantes**
 
 ## Edições ✏️📑
 
@@ -94,7 +94,7 @@ No mais muito obrigado a todos que visualizaram, caso alguma dúvida pode entrar
 
 
 
-## 4. Outras Coisa Não Tão relavantes 📁😅🤪...
+## 4. Outras Coisas Não Tão relavantes 📁😅🤪...
 
 Na estrutura de diretorios há 2 pastas principais:
 
