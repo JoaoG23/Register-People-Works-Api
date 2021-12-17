@@ -1,5 +1,5 @@
 # CadPeople Register
-## Indice 📗👨‍💻
+## Indice 👨‍💻
 1. **Introdução**
 1. **Desenvolvimento**
 1. **Como Usar**
