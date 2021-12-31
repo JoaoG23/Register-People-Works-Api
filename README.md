@@ -1,4 +1,6 @@
-# CadPeople Register
+# CadPeople Register 📥
+
+![Alt ou título da imagem](./Assets/registerFoto.png)
 ## Indice 👨‍💻
 1. **Introdução**
 1. **Desenvolvimento**
@@ -49,7 +51,7 @@ Consertando bugs edit | 17/12/2021
 
 
 ### 1. 🚪 Introdução
-![Alt ou título da imagem](./Assets/registerFoto.png)
+![introducao](./Assets/GifRegistPeople.gif)
 
 Isto é um pequeno sistema de cadastro de pessoas criado, para, treinamento da minha estruturacão de código na parte de servidor em node.
 Cujo o usuário pode cadastrar pessoas atráves de uma simples simples tela, assim que o cadastro e feito, ele será listado entre os cadastrados.
