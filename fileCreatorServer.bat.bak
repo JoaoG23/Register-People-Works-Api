@@ -19,9 +19,6 @@ cd Routers
 copy NUL Routers.js
 cd ..
 
-echo Clique ENTER para instalar NODEjs
-pause 
-npm init
 
 
 
