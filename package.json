@@ -4,6 +4,7 @@
   "description": "Um sistema de cadastro de pessoas ",
   "main": "app.js",
   "scripts": {
+    "start":"node initialize.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "João",

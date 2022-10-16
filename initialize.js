@@ -5,7 +5,7 @@ const app = express();
 const port = 2001;
 const path = require('path');
 const mongoose = require('mongoose');
-const routerRegister = require('./Routers/RoutersRegister');
+const routerRegister = require('./Aplics/Routers/RoutersRegister');
 
 mongoose.connect('mongodb://localhost/people');
 
